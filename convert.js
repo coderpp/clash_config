@@ -485,7 +485,7 @@ function buildProxyGroups({
             "name": "AI",
             "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/chatgpt.png",
             "type": "select",
-            "proxies": defaultProxies
+            "proxies": (hasUS) ? ["美国节点", "选择节点"] : defaultProxies
         },
         {
             "name": "Telegram",
